@@ -413,3 +413,137 @@
     transition: all 1.5s ease;
     z-index: 2;
 }
+
+/* Media Queries */
+
+/* Small Devices (Up to 600px) */
+@media (max-width: 600px) {
+    .navBar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navBar img {
+        margin-left: 0;
+        height: 70px;
+        width: 70px;
+    }
+
+    .navBar h3 {
+        font-size: 12px;
+    }
+
+    .navBar .bigFont {
+        font-size: 15px;
+    }
+
+    .pageOne h1,
+    .pageTwo h1,
+    .pageFour h1,
+    .pageSix h1 {
+        font-size: 40px;
+    }
+
+    .Two {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .Two img {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-image,
+    .right-image {
+        width: 100%;
+        transform: translate(0, 30%);
+    }
+
+    .left-cont,
+    .right-cont {
+        margin-top: 50px;
+    }
+
+    .left-cont-sub,
+    .right-cont-sub {
+        margin-left: 0;
+    }
+}
+
+/* Medium Devices (601px to 900px) */
+@media (max-width: 900px) {
+    .navBar {
+        gap: 15px;
+    }
+
+    .navBar img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .navBar h3 {
+        font-size: 13px;
+    }
+
+    .pageOne h1,
+    .pageTwo h1,
+    .pageFour h1,
+    .pageSix h1 {
+        font-size: 45px;
+    }
+
+    .Two img {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-image,
+    .right-image {
+        width: 100%;
+        transform: translate(0, 30%);
+    }
+
+    .left-cont,
+    .right-cont {
+        margin-top: 80px;
+    }
+}
+
+/* Large Devices (901px to 1200px) */
+@media (max-width: 1200px) {
+    .navBar {
+        gap: 18px;
+    }
+
+    .navBar img {
+        height: 85px;
+        width: 85px;
+    }
+
+    .pageOne h1,
+    .pageTwo h1,
+    .pageFour h1,
+    .pageSix h1 {
+        font-size: 48px;
+    }
+
+    .Two img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Extra Large Devices (Above 1200px) */
+@media (min-width: 1201px) {
+    .left-image,
+    .right-image {
+        width: 50%;
+        transform: translate(-50%, 30%);
+    }
+
+    .left-image:hover::before,
+    .right-image:hover::before {
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
